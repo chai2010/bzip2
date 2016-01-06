@@ -3,10 +3,11 @@
 // license that can be found in the LICENSE file.
 
 // Package bzip provides a writer that uses bzip2 compression (bzip.org).
-package bzip
+package bzip // import "github.com/chai2010/bzip2"
 
 /*
 #cgo CFLAGS: -I./internal/bzip2-1.0.6
+#cgo CFLAGS: -Wall -Winline -O2 -g -D_FILE_OFFSET_BITS=64
 
 #include <bzlib.h>
 #include <stdlib.h>
