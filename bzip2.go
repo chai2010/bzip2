@@ -2,8 +2,8 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// Package bzip provides a writer that uses bzip2 compression (bzip.org).
-package bzip // import "github.com/chai2010/bzip2"
+// Package bzip2 provides a writer that uses bzip2 compression (bzip.org).
+package bzip2 // import "github.com/chai2010/bzip2"
 
 /*
 #cgo CFLAGS: -I./internal/bzip2-1.0.6

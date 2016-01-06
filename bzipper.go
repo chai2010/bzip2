@@ -12,11 +12,11 @@ import (
 	"log"
 	"os"
 
-	bzip "github.com/chai2010/bzip2"
+	"github.com/chai2010/bzip2"
 )
 
 func main() {
-	w := bzip.NewWriter(os.Stdout)
+	w := bzip2.NewWriter(os.Stdout)
 	if _, err := io.Copy(w, os.Stdin); err != nil {
 		log.Fatalf("bzipper: %v\n", err)
 	}
